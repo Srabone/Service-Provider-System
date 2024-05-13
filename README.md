@@ -5,8 +5,4 @@ The "Service Provider System" is a group project that utilizes PHP for server-si
 ![image](https://github.com/Srabone/Service-Provider-System/assets/95047190/09fb61cb-ba3c-4080-839a-04b8a72c994f)
 
 # User Category
-There are 4-types of Users here. They are:
-• Admin
-• Worker/Service Provider
-• Customer/User
-• Customer Service Manager/Manager
+There are 4-types of Users here. They are Admin, Worker/Service Provider, Customer/User, Customer Service Manager/Manager
