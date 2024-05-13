@@ -1,2 +1,2 @@
 # Service Provider System
- The Service Provider System is a comprehensive web application built with PHP and JavaScript for validation, leveraging AJAX requests for seamless interactions. It boasts a sleek CSS design, offering users a user-friendly interface to effortlessly browse, book, and review service providers across various domains such as plumbing, electrical work, painting, and cleaning.
+The Service Provider System uses PHP for server-side scripting and database operations, HTML for structuring web pages, CSS for styling, and JavaScript for interactivity and form validation. AJAX facilitates seamless data retrieval, while JSON ensures efficient data exchange. jQuery simplifies DOM manipulation, enhancing the user experience.
