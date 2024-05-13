@@ -1,0 +1,272 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f3f3; /* White background */
+}
+
+/* Form styles */
+form {
+    width: 60%; /* Adjusted width */
+    margin: 20px auto; /* Adjusted margin */
+    background-color: #e960b06b;
+    padding: 10px; /* Adjusted padding */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(248, 245, 245, 0.1);
+    border: 5px solid black; /* Black border */
+}
+
+/* Fieldset styles */
+fieldset {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+legend {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Label styles */
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Input styles */
+input[type="text"],
+input[type="password"],
+textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+input[type="radio"] {
+    margin-right: 10px;
+}
+
+/* Error message styles */
+.error-message {
+    color: #ff0000;
+    font-size: 14px;
+}
+
+/* Submit button styles */
+input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #4caf50;
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/* Table styles */
+table {
+    width: 80%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+/* Button styles */
+.btn-label {
+    display: inline-block;
+    width: 100px; /* Adjust width as needed */
+}
+
+.btn-input {
+    width: calc(100% - 110px); /* Adjust width as needed */
+}
+
+.center {
+    text-align: center;
+}
+.email-input {
+    width: 100%; /* Adjusted width to accommodate padding and border */
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+.welcome-text {
+    color: rgb(86, 6, 89); /* Purple color */
+    font-size: 24px; /* Adjust font size */
+    }
+    .work-list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* Two columns instead of four */
+        grid-gap: 20px;
+        list-style-type: none;
+    }
+    
+    .work-list-item {
+        border: 1px solid #ccc;
+        padding: 20px;
+        background-color: #f9f9f9;
+        text-align: center;
+        /* Adjust width to make the rows wider */
+        width: 400px; /* Adjust the width as needed */
+        margin: 0 auto; /* Center the items horizontally */
+    }
+    
+    .work-list-item h3 {
+        margin-top: 0;
+    }
+
+    
+//* Add this to your existing CSS file */
+.button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.button-row {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px; /* Adjust as needed */
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #62259ee2; /* Off-white color */
+    color: #f3e9e9; /* Text color */
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    margin: 0 5px; /* Adjust spacing between buttons */
+}
+
+.button:hover {
+    background-color: #27e15f; /* Lighter off-white color on hover */
+}
+
+/* Styling for the logout button */
+.logout-button {
+    background-color: #ff4d4d; /* Red color */
+    color: #fff; /* White text color */
+}
+
+.logout-button:hover {
+    background-color: #ff4d4d; /* Red color on hover */
+}
+
+/* Style for the footer */
+/* style.css */
+
+.green-button {
+    background-color: #27e15f; /* Red color */
+    color: #fff; /* White text color */
+}
+
+
+/* CSS styles for the footer */
+footer {
+    text-align: center;
+   
+    padding: 20px;
+    margin-top: 20px;
+}
+
+footer p {
+    margin: 5px 0;
+    font-size: 18px; /* Increase font size */
+    color: #104ea5; /* Change font color */
+}
+
+
+.button-row-custom {
+    text-align: center;
+    margin-top: 20px; /* Adjust as needed */
+}
+
+
+
+
+.custom-button {
+    display: inline-block;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.green-button-custom {
+    background-color: #4CAF50; /* Green color */
+    color: white;
+}
+
+/* Styles for the work list table */
+
+.work-list-container {
+    margin: 0 auto; /* Center horizontally */
+    text-align: center; /* Center contents */
+}
+
+
+.work-list {
+    width: 100%;
+    border-collapse: collapse;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.work-list th, .work-list td {
+    padding: 12px;
+    text-align: center; /* Center align content */
+}
+
+.work-list th {
+    background-color: #f2f2f2;
+}
+
+.work-list tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.work-list tbody tr:hover {
+    background-color: #f2f2f2;
+}
+
+/* Center align the service details container */
+.service-details-container {
+    margin: 0 auto; /* Set left and right margins to auto */
+    width: fit-content; /* Adjust container width based on content */
+    align: center;
+}
+
+
+
+
+

@@ -1,0 +1,8 @@
+{
+  "slides": [
+    {"url": "../image/image1.jpg"},
+    {"url": "../image/image2.jpg"},
+    {"url": "../image/image3.jpg"},
+    {"url": "../image/image4.jpg"}
+  ]
+}

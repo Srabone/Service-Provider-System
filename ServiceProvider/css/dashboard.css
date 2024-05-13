@@ -1,0 +1,99 @@
+/* Style for the header */
+header {
+    background-color: #e4a4d2;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+/* Common styles for buttons */
+.button,
+.logout-button {
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 5px;
+}
+
+/* Style for the My Profile button */
+/* Style for the My Profile button */
+.button {
+    background-color: #2fa122;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+/* Hover effect for the My Profile button */
+.button:hover {
+    background-color: #27991a; /* Dark green color on hover */
+    color: white; /* Ensure text color stays white on hover */
+}
+
+
+/* Style for the logout button */
+.logout-button {
+    background-color: #f44336;
+    color: white;
+}
+
+.logout-button:hover {
+    background-color: #ff4d4d; /* Red color on hover */
+}
+
+/* Style for the footer */
+footer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Dashboard styles */
+#slideshow img {
+    max-width: 100%; /* Ensure images don't exceed container width */
+    height: auto; /* Allow images to adjust height proportionally */
+}
+
+/* Adjustments to maintain aspect ratio */
+
+/* Dashboard styles */
+form {
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    position: relative; /* Make the form a positioned parent for absolute positioning */
+    overflow: hidden; /* Hide overflowing content */
+    width: 70%; /* Adjust the width of the form to fit laptop interface */
+    height: 50vh; /* Set a fixed height for the form */
+    margin: auto; /* Center the form horizontally and vertically */
+    padding: 20px; /* Add padding for better spacing */
+    border-radius: 10px; /* Add border radius for rounded corners */
+    background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent white background */
+}
+
+#slideshow {
+    position: absolute;
+    top: 0;
+    right: 15;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background-size: 60%;
+    background-repeat: no-repeat;
+    animation: slideshow 6s infinite;
+    padding: 60px; /* Add padding around the slideshow */
+    margin-top: 40px;
+    text-align: left;
+}
+
+@keyframes slideshow {
+    0% { opacity: 1; }
+    25% { opacity: 0; }
+    50% { opacity: 0; }
+    75% { opacity: 0; }
+    100% { opacity: 1; }
+}
