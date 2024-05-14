@@ -30,13 +30,13 @@ redirectToLogin(); // Redirect to login page if user is not logged in
             <a href="../view/myprofile.php" class="button">My Profile</a>
             </div>
             <div class="button-row">
-                <a href="../view/addservice.php" class="button">Add Service</a>
-                <a href="../view/searchservice.php" class="button">Search for Service</a>
+                <a href="../view/viewservice.php" class="button">My Service</a>
+                <a href="../view/financials.php" class="button">Financials</a>
             </div>
             <div class="button-row">
-                <a href="../view/viewservice.php" class="button">See All Services</a>
+                <a href="../view/seeallservices.php" class="button">See All Services</a>
                 <a href="../view/review.php" class="button">See Review</a>
-                <a href="../view/viewservice.php" class="button">Financials</a>
+                
             </div>
         </div>
     </form>

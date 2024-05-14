@@ -7,11 +7,13 @@
     <?php include 'header.php'; ?>
 </head>
 <body>
-      
+    
+   <form>
+    
 
     <h2 align = 'center'>Service Details</h2>
     <div class="service-details-container">
-        <?php include '../controller/viewservice_controller.php'; ?> 
+        <?php include '../controller/seeallservice_controller.php'; ?> 
     </div>
 
     <div class="button-row-custom">
@@ -24,6 +26,7 @@
     <?php
         include 'footer.php';
     ?>
-    
+   </form> 
 </body>
 </html>
+

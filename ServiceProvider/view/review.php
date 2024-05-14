@@ -17,17 +17,8 @@ $mydb->CloseCon($conobj);
 
 // Redirect based on the servicetype
 switch ($servicetype) {
-    case 'electrician':
-        header("location: reviewelectrician.php");
-        exit;
-    case 'painter':
-        header("location: reviewpainter.php");
-        exit;
-    case 'plumber':
-        header("location: reviewplumber.php");
-        exit;
-    case 'cleaner':
-        header("location: reviewcleaner.php");
+    case 'serviceprovider':
+        header("location: reviewpage.php");
         exit;
     default:
         // Default redirection if servicetype is not recognized

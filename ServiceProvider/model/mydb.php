@@ -3,7 +3,7 @@ class model
 {
     function OpenCon()
     {
-        $conn = new mysqli("localhost", "root", "", "provider"); 
+        $conn = new mysqli("localhost", "root", "", "providerr"); 
         return $conn;
     }
 
@@ -27,23 +27,18 @@ function fetchmyprofile($conn, $username)
     $result = $conn->query($sql);
     return $result;
 }
-
-function fetchWorkListByServiceType($conn, $username, $serviceType)
-  {
-    $sql = "SELECT w.id, w.workname, w.workdetails, w.price 
-              FROM userinfo u 
-              JOIN worklist w ON u.servicetype = w.servicetype 
-              WHERE u.username = '$username' AND u.servicetype = '$serviceType'";
-
+public function getServiceType($conn, $username) {
+    // Assuming you have a query to fetch the service type based on the username
+    $sql = "SELECT servicetype FROM userinfo WHERE username = '$username'";
     $result = $conn->query($sql);
 
     if ($result && $result->num_rows > 0) {
-      $services = $result->fetch_all(MYSQLI_ASSOC);
-      return $services;
+        $row = $result->fetch_assoc();
+        return $row['servicetype'];
     } else {
-      return null; // Return null if no services found (not an error)
+        return null; // Return null if service type not found
     }
-  }
+}
 
   function fetchWorkList($conn) {
     $sql = "SELECT * FROM worklist";
@@ -154,7 +149,20 @@ function deleteAccount($conn, $username, $currentPassword)
     }
 }
 
+function addWorkToUser($conn, $username, $workId) {
+    $sql = "INSERT INTO user_work (username, work_id) VALUES ('$username', '$workId')";
+    $result = $conn->query($sql);
+    return $result;
+}
 
+function getAddedWorkForUser($conn, $username) {
+    $sql = "SELECT w.workname, w.workdetails, w.price 
+            FROM user_work uw
+            JOIN worklist w ON uw.work_id = w.id
+            WHERE uw.username = '$username'";
+    $result = $conn->query($sql);
+    return $result;
+}
 
 function updateInformation($conn, $username, $newemail, $newpnum, $newaddress)
 {
@@ -183,29 +191,7 @@ function authenticate($conn, $username, $password) {
     }
 }
 
-function getServiceType($conn, $username)
-    {
-        // Query to fetch service type based on username
-        $sql = "SELECT servicetype FROM userinfo WHERE username = '$username'";
-        $result = $conn->query($sql);
 
-        // Check if the query was successful
-        if ($result) {
-            // Check if any rows were returned
-            if ($result->num_rows > 0) {
-                // Fetch the first row as an associative array
-                $row = $result->fetch_assoc();
-                // Return the service type
-                return $row['servicetype'];
-            } else {
-                // No rows found for the username
-                return null;
-            }
-        } else {
-            // Query execution failed
-            return null;
-        }
-    }
 
 function CloseCon($conn)
     {

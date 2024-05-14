@@ -13,7 +13,7 @@ if ($result !== null && $result->num_rows > 0) {
     echo "<div class='work-list-container'>";
     echo "<table>";
     echo "<tbody>";
-    echo "<tr><th>Work Name</th><th>ID</th><th>Work Details</th><th>Price</th><th>Action</th></tr>"; 
+    echo "<tr><th>Work Name</th><th>ID</th><th>Work Details</th><th>Price</th></tr>"; 
 
     while ($row = $result->fetch_assoc()) {
         echo "<tr>";
@@ -22,10 +22,6 @@ if ($result !== null && $result->num_rows > 0) {
         echo "<td>" . $row["workdetails"] . "</td>";
         echo "<td>" . $row["price"] . "</td>";
 
-        
-        echo "<td>";
-        echo "<button type='submit' name='add' value='" . $row["id"] . "'>Add</button>"; 
-        echo "</td>";
 
         echo "</tr>";
     }

@@ -3,22 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Painter Reviews</title>
+    <title>Reviews</title>
     <link rel="stylesheet" type="text/css" href="../css/style.css">
 </head>
 <body>
     
     
     <form action="#" method="post">
-    <h1 align='center'>Painter Reviews</h1>
+    <h1 align='center'>Reviews</h1>
         <table>
             <!-- Review 1 -->
             <tr>
                 <td>
                     <div class="review">
                         <h2>Review 1</h2>
-                        <p>True professionals who took great care in every stroke, leaving my walls looking fresh and vibrant.</p>
-                        <p>Rating: 4.5/5</p>
+                        <p>The customer is very important, the customer will be followed by the customer. But the earth needs a hot chocolate..</p>
+                        <p>Rating: 4/5</p>
                     </div>
                 </td>
             </tr>
@@ -28,22 +28,13 @@
                 <td>
                     <div class="review">
                         <h2>Review 2</h2>
-                        <p>Impressed by their creativity and dedication, the final result was nothing short of perfection.</p>
-                        <p>Rating: 4/5</p>
+                        <p>Professional demeanor and excellent problem-solving abilities; would recommend without hesitation..</p>
+                        <p>Rating: 5/5</p>
                     </div>
                 </td>
             </tr>
             
-              <!-- Review 3 -->
-              <tr>
-                <td>
-                    <div class="review">
-                        <h2>Review 3</h2>
-                        <p>Solid job overall, though could have been a bit more punctual and communication could have been clearer. Satisfied with the end result.</p>
-                        <p>Rating: 3/5</p>
-                    </div>
-                </td>
-            </tr>
+            <!-- You can add more reviews here -->
         </table>
     </form>
 

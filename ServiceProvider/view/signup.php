@@ -18,10 +18,8 @@
                         <legend><b>Service Info</b></legend>
                         <label for="servicetype">Type of Service Provider:</label>
                         <select name="servicetype">
-                            <option value="electrician">Electrician</option>
-                            <option value="painter">Painter</option>
-                            <option value="plumber">Plumber</option>
-                            <option value="cleaner">Cleaner</option>
+                            <option value="serviceprovider">Service Provider</option>
+                            
                         </select>
                     </fieldset>
                 </td>
