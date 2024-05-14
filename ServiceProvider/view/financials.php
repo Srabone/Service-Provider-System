@@ -10,8 +10,6 @@
     
     <?php include 'header.php'; ?>
 
-    
-
     <div class="added-work-container">
         <table id="added-work-table">
         <h2>My Selected Work</h2>
@@ -23,7 +21,7 @@
                 </tr>
             </thead>
             <tbody>
-                <?php include '../controller/servicelist_data.php'; ?> 
+                <?php include '../controller/servicelist_controller.php'; ?> 
             </tbody>
         </table>
 

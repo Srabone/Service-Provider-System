@@ -2,7 +2,7 @@
 include '../model/mydb.php';
 session_start();
 
-$totalPrice = 0; // Initialize total price
+$totalPrice = 0;
 if (isset($_SESSION['username'])) {
     $mydb = new model();
     $conobj = $mydb->OpenCon();
@@ -24,6 +24,6 @@ if (isset($_SESSION['username'])) {
 
     $mydb->CloseCon($conobj);
 } else {
-    echo "<tr><td colspan='3'>Please log in to view your selected work.</td></tr>";
+    echo "<tr><td>Please log in to view your selected work.</td></tr>";
 }
 ?>

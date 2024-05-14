@@ -7,8 +7,6 @@
     <?php include 'header.php'; ?>
 </head>
 <body>
-      
-
     <h2 align = 'center'>Service Details</h2>
     <div class="service-details-container">
         <?php include '../controller/viewservice_controller.php'; ?> 

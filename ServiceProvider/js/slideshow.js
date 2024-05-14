@@ -7,13 +7,13 @@ $(document).ready(function() {
     ];
 
     var currentIndex = 0;
-
+//id sel
     function nextImage() {
         $('#slideshow').css('background-image', 'url(../image/' + images[currentIndex] + ')');
         currentIndex = (currentIndex + 1) % images.length;
     }
 
-    nextImage(); // Show the first image initially
+    nextImage();
 
-    setInterval(nextImage, 3000); // Change image every 5 seconds
+    setInterval(nextImage, 3000); 
 });

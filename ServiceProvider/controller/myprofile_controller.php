@@ -1,17 +1,9 @@
 <?php
-// Include the database model to fetch users
 include '../model/mydb.php';
-
-// Create an instance of the database model
 $mydb = new model();
-
-// Open database connection
 $conn = $mydb->OpenCon();
-
-// Fetch all users from the database
 $result = $mydb->fetchmyprofile($conn, $username);
 
-// Display users in a table format
 if ($result->num_rows > 0) {
     echo "<table>";
     echo "<tr><th>Name</th><th>Username</th><th>Email</th><th>Password</th><th>Phone Number</th><th>Gender</th><th>Address</th><th>Service Type</th></tr>";
@@ -31,7 +23,5 @@ if ($result->num_rows > 0) {
 } else {
     echo "No users found";
 }
-
-// Close database connection
 $mydb->CloseCon($conn);
 ?>

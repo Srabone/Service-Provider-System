@@ -6,7 +6,6 @@ $nameError = $usernameError = $emailError = $passwordError = $pnumError = $gende
 $name = $username = $email = $password = $pnum = $gender = $address = $servicetype = "";
 
 if (isset($_POST['submit'])) {
-    // Validate form fields
     if (empty($_POST["name"]) || !preg_match("/^[a-zA-Z ]+$/", $_POST["name"])) {
         $nameError = "Name should only contain alphabets.";
     } else {

@@ -1,6 +1,5 @@
 <?php
 include '../view/session.php';
-
 include '../model/mydb.php';
 
 $username = $_POST['username'];
@@ -12,7 +11,6 @@ $conn = $mydb->OpenCon();
 $userExists = $mydb->getUserByUsername($conn, $username);
 
 if ($userExists) {
-    // Validate password length
     if (strlen($newPassword) >= 8) {
         $result = $mydb->resetPassword($conn, $username, $newPassword);
         

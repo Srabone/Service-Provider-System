@@ -1,6 +1,6 @@
 <?php
 include 'session.php';
-redirectToLogin(); // Redirect to login page if user is not logged in
+redirectToLogin(); 
 
 include('../model/mydb.php');
 
@@ -17,7 +17,6 @@ if($userData) {
     $pnum = $userData['pnum'];
     $address = $userData['address'];
 } else {
-    // Handle case where user data is not found
     $name = "N/A";
     $email = "N/A";
     $pnum = "N/A";
@@ -50,16 +49,10 @@ if($userData) {
                 <td><?php echo $address; ?></td>
             </tr>
         </table>
-        <!-- Add any additional profile information here -->
-        <br>
+              <br>
         <div align='center'>
-            <!-- Update Info button -->
             <a href="../view/updateinformation.php" class="button">Update Information</a>
-            
-            <!-- Change Password button -->
             <a href="../view/changepassword.php" class="button">Change Password</a>
-            
-            <!-- Delete Account button -->
             <a href="../view/deleteaccount.php" class="button">Delete Account</a>
         </div>     
     </form>

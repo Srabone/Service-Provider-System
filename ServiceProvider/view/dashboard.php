@@ -1,6 +1,6 @@
 <?php
 include 'session.php';
-redirectToLogin(); // Redirect to login page if user is not logged in
+redirectToLogin();
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -18,13 +18,10 @@ redirectToLogin(); // Redirect to login page if user is not logged in
     </header>
 
     <form>
-        <!-- Slides as background for form -->
         <div id="slideshow"></div>
-        
         <div id="graph-container">
             <canvas id="myChart" width="400" height="400"></canvas>
         </div>
-
         <div class="button-container">
             <div class="button-row">
             <a href="../view/myprofile.php" class="button">My Profile</a>
@@ -36,7 +33,6 @@ redirectToLogin(); // Redirect to login page if user is not logged in
             <div class="button-row">
                 <a href="../view/seeallservices.php" class="button">See All Services</a>
                 <a href="../view/review.php" class="button">See Review</a>
-                
             </div>
         </div>
     </form>

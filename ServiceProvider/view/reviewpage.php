@@ -7,12 +7,9 @@
     <link rel="stylesheet" type="text/css" href="../css/style.css">
 </head>
 <body>
-    
-    
     <form action="#" method="post">
     <h1 align='center'>Reviews</h1>
         <table>
-            <!-- Review 1 -->
             <tr>
                 <td>
                     <div class="review">
@@ -22,8 +19,6 @@
                     </div>
                 </td>
             </tr>
-
-            <!-- Review 2 -->
             <tr>
                 <td>
                     <div class="review">
@@ -33,8 +28,6 @@
                     </div>
                 </td>
             </tr>
-            
-            <!-- You can add more reviews here -->
         </table>
     </form>
 

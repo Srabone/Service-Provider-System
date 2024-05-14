@@ -10,33 +10,28 @@ $conn = $mydb->OpenCon();
 $userExists = $mydb->getUserByUsername($conn, $username);
 
 if ($userExists) {
-    // Verify the current password
     $validPassword = $mydb->verifyPassword($conn, $username, $currentPassword);
 
     if ($validPassword) {
-        // Both username and password are verified, proceed to delete account
-        $result = $mydb->deleteAccount($conn, $username, $currentPassword); // Using the method from the $mydb object
-
+        $result = $mydb->deleteAccount($conn, $username, $currentPassword); 
         if ($result) {
             echo "Account Successfully ended.";
-            session_destroy(); // Destroy the session
+            session_destroy(); 
             header("Location: ../view/signup.php");
-            exit(); // Stop further execution
+            exit(); 
         } else {
             echo "Delete Account failed. Please try again later.";
             header("Location: ../view/deleteaccount.php");
-            exit(); // Stop further execution
+            exit(); 
         }
     } else {
-        // Password verification failed
         header("Location: ../view/deleteaccount.php");
         echo "Invalid password.";
-        exit(); // Stop further execution
+        exit();
     }
 } else {
-    // Username verification failed
     header("Location: ../view/deleteaccount.php");
     echo "Invalid username.";
-    exit(); // Stop further execution
+    exit(); 
 }
 ?>

@@ -1,6 +1,5 @@
 <?php
 include 'session.php';
-// Redirect to login page if user is not logged in
 ?>
 <!DOCTYPE html>
 <html lang="en">

@@ -6,11 +6,8 @@
     <link rel="stylesheet" type="text/css" href="../css/style.css">
     <?php include 'header.php'; ?>
 </head>
-<body>
-    
+<body> 
    <form>
-    
-
     <h2 align = 'center'>Service Details</h2>
     <div class="service-details-container">
         <?php include '../controller/seeallservice_controller.php'; ?> 

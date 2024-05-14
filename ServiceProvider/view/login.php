@@ -10,7 +10,7 @@
 </head>
 <body>
   <?php 
-    include 'session.php'; // Include the session.php ONCE at the beginning
+    include 'session.php';
   ?>
 
   <h1 align="center">Service Provider Login</h1>

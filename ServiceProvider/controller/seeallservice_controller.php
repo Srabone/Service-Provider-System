@@ -4,8 +4,6 @@ session_start();
 
 $mydb = new model();
 $conobj = $mydb->OpenCon();
-
-
 $result = $mydb->fetchWorkList($conobj);
 
 if ($result !== null && $result->num_rows > 0) {
@@ -21,8 +19,6 @@ if ($result !== null && $result->num_rows > 0) {
         echo "<td>" . $row["id"] . "</td>";
         echo "<td>" . $row["workdetails"] . "</td>";
         echo "<td>" . $row["price"] . "</td>";
-
-
         echo "</tr>";
     }
 
@@ -34,7 +30,7 @@ if ($result !== null && $result->num_rows > 0) {
     echo "<p>No work list found.</p>";
 }
 
-// Handle form submission
+
 if (isset($_POST['add']) && isset($_SESSION['username'])) {  
     $username = $_SESSION['username'];
     $workId = $_POST['add'];
