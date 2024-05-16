@@ -1,0 +1,236 @@
+/*sign in */
+
+button[name="submit"] {
+    background-color: #38d1d9;
+    border: none;
+    padding: 10px 20px;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 10px;
+  }
+  
+  input[name="password"] {
+    width: 20%;
+    padding: 3px;
+    margin: 5px 0;
+    box-sizing: border-box;
+    border: 2px solid #b7b1b1;
+    border-radius: 2px;
+  }
+  
+  input[name="email"] {
+    width: 20%;
+    padding: 3px;
+    margin: 5px 0;
+    box-sizing: border-box;
+    border: 2px solid #c8bfbf;
+    border-radius: 2px;
+  }
+  
+  button[name="forgot-password"] {
+    background-color: #c9dc1f;
+    border: none;
+    padding: 10px 20px;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  .forgot-password-link {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  button[name="sign-up"] {
+    background-color: #407be7;
+    border: none;
+    padding: 10px 20px;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 15px;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+  }
+  
+  .sign-up {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  #signin-header {
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 15px;
+  }
+  
+  
+  /* adminhome */
+  #adminhome-header {
+    border: 1px solid black;
+    text-align: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 15px;
+  }
+  
+  button[name="x"] {
+    background-color: black;
+    width: 300px;
+    border: none;
+    padding: 10px 20px;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  button[name="y"] {
+    background-color: rgb(32, 133, 211);
+    border: none;
+    padding: 10px 20px;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  button[name="z"] {
+    background-color: rgb(254, 17, 17);
+    border: none;
+    padding: 10px 20px;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 5px;
+    position: fixed;
+    top: 25px;
+    right: 10px;
+  }
+  
+  
+  .home {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  /* profile */
+  button[name="p"] {
+    background-color: black;
+    border: none;
+    padding: 10px 20px;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  .profile {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  /* view */
+  
+  .pro {
+    width: 150px;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  .user-info {
+    background-color: #d3c8c8;
+    padding: 10px;
+    border: 5px solid #ddd;
+    border-radius: 10px;
+    margin: 10% auto;
+    text-align: center;
+  }
+  
+  /* edit info */
+  
+  form[name="editinfo-form"] {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  /* Style the heading inside the form */
+  form[name="editinfo-form"] h1[name="h1"] {
+    text-align: center;
+  }
+  
+  /* Style input fields */
+  form[name="editinfo-form"] input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+  }
+  form[name="editinfo-form"] input [name="phone"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+  }
+  
+  form[name="editinfo-form"] input [name="email"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+  }
+  /* Style the font element for error messages */
+  form[name="editinfo-form"] font {
+    color: red;
+  }
+  
+  /* Style the select element */
+  form[name="editinfo-form"] select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+  }
+  
+  /* Style the update button */
+  form[name="editinfo-form"] button[name="button"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* Hover effect for the button */
+  form[name="editinfo-form"] button[name="button"] {
+    background-color: #48d938;
+    border: none;
+    padding: 10px 20px;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 10px;
+  }
+  
+  
+  /* over view table */
+  table[name="overview"] {
+    width: 27%;
+    border: 1px solid #c82020;
+    border-collapse: collapse;
+    margin: auto;
+    background-color: gray;
+  }
+  
+  table[name="overview"] td {
+    padding: 25px;
+    text-align: center;
+  }
+  
+  /* signin */
+  p{
+    color: red;
+  }
+  
