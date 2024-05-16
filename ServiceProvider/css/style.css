@@ -217,11 +217,10 @@ footer p {
     color: white;
 }
 
-/* Styles for the work list table */
 
 .work-list-container {
-    margin: 0 auto; /* Center horizontally */
-    text-align: center; /* Center contents */
+    margin: 0 auto; 
+    text-align: center; 
 }
 
 
@@ -233,7 +232,7 @@ footer p {
 
 .work-list th, .work-list td {
     padding: 12px;
-    text-align: center; /* Center align content */
+    text-align: center; 
 }
 
 .work-list th {
@@ -248,11 +247,11 @@ footer p {
     background-color: #f2f2f2;
 }
 
-/* Center align the service details container */
 .service-details-container {
-    margin: 0 auto; /* Set left and right margins to auto */
-    width: fit-content; /* Adjust container width based on content */
-    align: center;
+    margin: 0 auto;
+    width: fit-content;
+    box-align: center; 
+    
 }
 
 
